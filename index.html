@@ -239,7 +239,7 @@
                 <div class="achievements__icon">
                     <img src="assets/clock.svg" alt="">
                 </div>
-                <h2 class="achievements__number">935</h2>
+                <h2 class="achievements__number" id="numbersjs">935</h2>
                 <p class="achievements__info">Dias de operação</p>
             </div>
             <div class="achievement" id="ms3">
@@ -324,7 +324,7 @@
                 <ul>
                     <li>Email: admin@paliate.agency.com</li>
                     <li>Endereço: Palliate, Palliate, Palliate </li>
-                    <li>Telefon: +55(21) 234-5678</li>
+                    <li>Telefone: +55(21) 234-5678</li>
                 </ul>
                 <ul class="footer__social__links">
                     <li><img src="assets/facebook-f.svg" alt=""></li>
@@ -335,6 +335,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let numeros = document.getElementById('#numerosjs')
+        let contador = 0
+        setInterval(() => numeros.innerHTML = contador++, 50000)
+    </script>
 
     <!--Ajax-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
